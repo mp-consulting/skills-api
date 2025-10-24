@@ -13,9 +13,7 @@ module SkillsAssessment
         @config[:title]
       end
 
-      def cv_filename
-        @cv_filename
-      end
+      attr_reader :cv_filename
 
       def timestamp
         Time.now.strftime('%Y-%m-%d %H:%M:%S')
