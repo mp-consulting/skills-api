@@ -21,6 +21,7 @@ Return ONLY valid JSON with this exact structure (no additional text):
     {
       "skill_name": "Skill name from ESCO list above",
       "skill_category": "Category from ESCO list",
+      "skill_uri": "http://data.europa.eu/esco/skill/...",
       "proficiency_level": 7,
       "experience_years": 5,
       "evidence": "Single line evidence from CV only",
@@ -42,8 +43,9 @@ CRITICAL RULES:
 1. Identify MAXIMUM 15 skills total
 2. evidence field MUST be a STRING (single line, no arrays)
 3. Only use skill names from the ESCO list above
-4. Return ONLY the JSON object with NO additional text
-5. Stop immediately after the final closing brace
+4. Match each skill_name to its skill_uri from the ESCO list provided above
+5. Return ONLY the JSON object with NO additional text
+6. Stop immediately after the final closing brace
 ```
 
 ## Parameters

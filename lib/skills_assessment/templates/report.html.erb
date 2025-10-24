@@ -286,6 +286,26 @@
       overflow-wrap: break-word;
     }
 
+    .skill-uri-cell {
+      text-align: center;
+      min-width: 80px;
+      width: 12%;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .skill-uri-cell a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .skill-uri-cell a:hover {
+      color: #764ba2;
+      text-decoration: underline;
+    }
+
     .skill-bar-inline {
       background: #e5e7eb;
       height: 8px;
@@ -471,6 +491,7 @@
               <th>Level</th>
               <th>Confidence</th>
               <th>Proficiency</th>
+              <th>Skill URI</th>
               <th>Evidence</th>
             </tr>
           </thead>
@@ -485,6 +506,15 @@
                 <div class="skill-bar-inline">
                   <div class="skill-fill-inline" style="width: <%= skill['proficiency_level'].to_i * 10 %>%"></div>
                 </div>
+              </td>
+              <td class="skill-uri-cell">
+                <% if skill['skill_uri'] %>
+                  <a href="<%= skill['skill_uri'] %>" target="_blank" rel="noopener noreferrer" title="View skill in ESCO">
+                    🔗 View
+                  </a>
+                <% else %>
+                  <span style="color: #999;">-</span>
+                <% end %>
               </td>
               <td class="skill-evidence-cell"><em><%= skill['evidence'] || 'No evidence provided' %></em></td>
             </tr>

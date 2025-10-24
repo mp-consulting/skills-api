@@ -21,6 +21,7 @@ OUTPUT FORMAT - Return ONLY valid JSON, no other text:
     {
       "skill_name": "Skill name from ESCO list",
       "skill_category": "Category",
+      "skill_uri": "http://data.europa.eu/esco/skill/...",
       "proficiency_level": 7,
       "experience_years": 5,
       "evidence": "Single line evidence from CV",
@@ -40,11 +41,12 @@ OUTPUT FORMAT - Return ONLY valid JSON, no other text:
 
 STRICT RULES:
 1. Only use skill names from the ESCO list provided above
-2. Identify MAXIMUM 12 skills total
-3. evidence field must be a STRING (not array) with single sentence max
-4. Only include skills with clear CV evidence
-5. Return ONLY the JSON object, no markdown or extra text
-6. Stop immediately after final closing brace
+2. Match each skill_name to its skill_uri from the ESCO list provided above
+3. Identify MAXIMUM 12 skills total
+4. evidence field must be a STRING (not array) with single sentence max
+5. Only include skills with clear CV evidence
+6. Return ONLY the JSON object, no markdown or extra text
+7. Stop immediately after final closing brace
 ```
 
 ## Parameters
