@@ -1,0 +1,36 @@
+# Dependencies
+Gemfile.lock
+vendor/bundle
+.bundle
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+llm_logs/
+*.log
+
+# Reports (keep reports/ folder but ignore generated files)
+reports/*.json
+reports/*.html
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Ruby
+.ruby-version
+.ruby-gemset
+tmp/
+*.gem
+
+# Project specific
+.asco/
+*.pdf

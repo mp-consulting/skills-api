@@ -1,0 +1,241 @@
+skillType,preferredLabel,relationType,altLabels,occupationUri,skillUri
+knowledge,incremental development,optional,gradual development,http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/00c04e40-35ea-4ed1-824c-82f936c8f876
+skill/competence,create solutions to problems,optional,"create solution to problems
+conceive  solutions to problems
+creating solutions to problems
+devise solutions to problems
+formulate solutions to problems
+come up with solutions to problems
+create solutions",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/03b9b491-fc9b-4868-914a-bf7cd47b5041
+knowledge,systems development life-cycle,optional,application development life-cycle,http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/09f2f811-a3fb-4de3-a70f-6420a6935575
+knowledge,Agile project management,optional,"Agile management software
+Agile project management",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/0a9acb6b-1139-4be9-b431-3a80a959f2f4
+skill/competence,coach employees,essential,"coach employees for performance
+train staff to improve performance
+employee coaching
+train employees to improve performance
+coach staff",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/0cc9c234-f817-4f4c-908a-4d28fe3b0f4a
+knowledge,internal risk management policy,essential,risk management internal policy,http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/0daaf096-1639-461c-bf1a-bbeea77e6b67
+skill/competence,apply conflict management,essential,"utilise conflict management
+conflict management application
+administer conflict management
+employ conflict management
+applying conflict management
+implement conflict management
+application of conflict management",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/0ee94af1-b445-4973-9c3f-459fab250342
+skill/competence,develop information standards,optional,"set norms for information management
+develop norms for information management
+set information standards
+develop standards for information
+settle information standards
+develop standards for information management",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/1b3fc0e0-c6f9-45fc-9c6e-14bbba662979
+skill/competence,perform risk analysis,essential,"complete  risk analysis
+finish  risk analysis
+performing a  risk analysis
+perform a risk analysis
+implement  risk analysis
+risk analysis performance
+undertake  risk analysis",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/1dd23dba-dd00-45ab-abf4-642902538317
+skill/competence,carry out project activities,optional,"execute project tasks
+develop project activities
+assist in projects development",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/1fcce318-3212-487a-ac07-4941bc85060d
+skill/competence,manage budgets,essential,"handle operational budgets
+manage operational budget
+maintain operational budgets
+manage operation budgets
+oversee operational budgets
+budget set costs
+ estimate set costs
+approximate set costs",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/21c5790c-0930-4d74-b3b0-84caf5af12ea
+skill/competence,create project specifications,essential,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/21fecc8a-392e-49ce-ac26-fb0696ccfead
+skill/competence,manage project information,essential,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/22902bf9-cc3f-495b-811a-c441e28e23f6
+knowledge,software architecture models,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/2450c3b3-e78e-435b-b84d-e05d984e71dc
+skill/competence,define technology strategy,essential,"develop technological improvement strategies
+define technology strategy",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/248894d1-42dc-474f-af6e-2da52ac0c679
+skill/competence,manage staff,essential,"coordinate and monitor employees
+manage subordinates
+coordinate and monitor subordinates
+conduct HR activities
+perform HR
+implement HR actions
+supervise personnel
+supervise employees
+undertake HR processes
+manage team
+manage staff
+manage personnel
+coordinate and monitor staff
+supervise staff
+manage employees",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/339ac029-066a-4985-9f9d-b3d7c8fea0bb
+knowledge,Iterative development,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/33d49d4f-31ec-473f-9b8a-b555aa5116bb
+knowledge,digital systems,optional,digital information systems,http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/397da142-ab35-48fe-b154-7c38f447adfb
+skill/competence,apply change management,optional,"alter management
+administer change management
+applying change management
+change management application
+change management
+revise management
+implement change management
+rework management
+apply changing management
+utilise change management
+apply change management
+employ change management",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/3c03ee71-4a23-448f-b79e-81fd75d27dca
+skill/competence,manage ICT project,essential,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/3c76296d-4bbd-44ba-8eaa-95bf275f79b7
+skill/competence,maintain relationship with suppliers,optional,"maintaining relationship with suppliers
+manage relationship with suppliers
+maintain relationship with a supplier
+control relationship with suppliers
+sustain relationship with suppliers
+maintain a relationship with suppliers
+preserve relationship with suppliers",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/3cd35f5d-ce6d-4f14-9a09-53d7a28d834c
+knowledge,Spiral development,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/4840338b-ac6c-486a-be1d-9ddfe00b8bdf
+skill/competence,provide cost benefit analysis reports,essential,"providing cost benefit analysis reports
+provide cost benefit analysis report
+create cost benefit analysis reports
+provide cost-benefit analysis reports
+generate cost benefit analysis reports
+produce cost benefit analysis reports
+provide reports on cost benefit analysis",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/48b68726-0fd6-4e03-a5eb-82236516ee7a
+skill/competence,recruit employees,essential,"hire new personnel
+manage recruitment of employees
+recruit staff
+hiring new personnel
+employ new personnel",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/496932f1-0b6b-4f73-9432-d95c7ddcd43b
+skill/competence,manage project changes,essential,"implement project changes
+supervise project adjustments",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/4df7a57a-9405-4995-8e02-4ca404832247
+knowledge,object-oriented modelling,optional,"object-oriented paradigm
+knowledge of object-oriented modelling
+object-oriented modeling",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/5be3d306-6cf1-4b49-aa1d-01651dd4ba4c
+skill/competence,analyse business plans,essential,"analyse business plan
+analyse business plan feasibility
+gauge business plans
+analyse business formal statements
+evaluate business plans
+analyze  business plans
+define and validate business needs and goals
+analyse business objectives",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/5da3c765-10a3-49eb-934c-ec401ceb1a34
+knowledge,Outsourcing model,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/63f0aa84-5e4c-4eb6-8e8c-876d9feedf1f
+skill/competence,use ICT ticketing system,optional,use e-ticketing system,http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/6430eb0d-c6de-46b7-a7fc-3dd2e8e62a69
+knowledge,hybrid model,optional,"hybrid model principles
+hybrid model fundamentals
+knowledge of hybrid model
+theory of hybrid model
+Hybrid model",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/67a118f4-8a5f-48f7-8e5f-de34b9ca2c37
+knowledge,crowdsourcing strategy,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/694dc996-52f3-4afa-a802-672e19f061b7
+skill/competence,implement ICT risk management,optional,implement ICT risk management,http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/69cfc5ed-6569-4aca-a4cc-fd782ba51d9c
+knowledge,Waterfall development,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/6a876489-7ad8-4a13-b09c-c9b8e97a302e
+knowledge,outsourcing strategy,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/6f8baa62-bc2b-4cc1-942b-f540c837cfa2
+skill/competence,maintain a central project repository,optional,"maintain a central project database
+preserve a central project database
+preserve a central project repository",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/770d4956-b5e0-4d44-bf42-3a766b232c5d
+skill/competence,execute ICT audits,optional,"execute information security audits
+execute ICT security audits
+execute IT security audits
+execute cyber security audits",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/7e1f9657-ab4e-407c-842f-b846197060e3
+skill/competence,define roadmap for blockchain in applications,essential,create a blockchain roadmap in applications,http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/8300443c-c793-4102-bff5-aa917a0cb39f
+knowledge,service-oriented modelling,optional,"SaaS model
+service oriented models
+ICT service models
+Software as a service
+SaaS
+service-oriented modeling",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/83218cac-3599-417e-93d2-26013cdccd98
+knowledge,quality standards,essential,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/8d4271ca-c9fd-40b3-875f-15f78332a49e
+knowledge,software design methodologies,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/8ff015a0-98ea-4d80-a23e-1f68110a919e
+skill/competence,develop blockchain technology,essential,"integrate blockchain technology
+incorporate blockchain technology",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/93b22bbf-ece1-4e2d-8d47-0c9392c5a4fd
+knowledge,ICT project management,essential,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/94dd823c-148e-4614-a6e8-99249b16357d
+knowledge,Rapid application development,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/96eb286a-58b7-45ff-a916-5578d0b79b8c
+skill/competence,perform procurement processes,optional,"order goods and equipment
+purchase
+apply procurement
+applying procurement",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/9e9a4209-c7cf-4f6e-973e-dc2ffadccc74
+knowledge,legal requirements of ICT products,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/a846cb9e-c152-41e7-bd34-45e7ff941e3b
+skill/competence,manage localisation,optional,"manage content localisation
+manage content localization
+manage translation and localisation
+manage localization
+manage content translation and localisation",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/a9bf8565-8a09-4118-9922-932d65a79d69
+knowledge,Open source model,optional,Open source model,http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/b16200f4-4f39-4b8b-aa9d-3568054d6bdb
+skill/competence,identify legal requirements,essential,identify legal and normative requirements and standards,http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/b9bf9e17-ae47-417b-bbb1-e8b7c263ccac
+skill/competence,use e-procurement,optional,"employ electronic procurement
+use electronic procurement
+utilize e-procurement
+employ e-procurement
+utilise e-procurement",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/bc067d2e-e151-408f-8e34-24effd2b7fd6
+knowledge,ICT project management methodologies,essential,"project management software
+prince2
+structured methodology
+agile
+Benefits realization management
+Extreme project management
+software development methodologies
+project management framework
+Critical chain project management
+Code and fix development",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9
+skill/competence,organise project meetings,optional,"handle project meetings logistic
+arrange project sessions
+manage project meetings
+plan project meetings
+schedule project sessions",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/c3687b34-fe53-4db2-ad1b-5055a6c5b6fd
+knowledge,quality assurance methodologies,optional,"quality assurance arrangements
+quality assurance methodology
+quality assurance processes
+quality assurance plans
+quality assurance approaches",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/c7cc6dc5-d56b-4323-8e5c-47c4022f615f
+knowledge,ICT system user requirements,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/ca73ac82-867a-4afa-9732-834aebe896ff
+knowledge,project configuration management,optional,"project setup control
+project deliverables management
+effective management process
+project setup management",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/ccb2e5f2-4279-48fd-9d85-a1db42ff1e13
+skill/competence,perform project management,essential,"perform management of projects
+do project management
+conduct project management
+manage projects
+perform projects management
+performing project management",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/cd5efa8c-e44d-4cbc-91c6-796018dbed68
+skill/competence,apply organisational techniques,optional,"apply organizational  techniques
+apply an organisational technique
+applying organisational techniques
+organisational techniques application
+utilise organisational techniques
+administer organisational techniques
+employ organisational techniques
+implement organisational techniques",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/d3eccb86-f02d-4950-bfbd-20b9510774a1
+knowledge,Process-based management,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/d5a59ca8-2e91-472e-8571-d12ce4478679
+skill/competence,define technical requirements,optional,"make a list of technical aspects
+write up technical specifications in a list
+write up a list of technical specifications
+write technical specifications
+gather technical requirements
+write up a technical specifications' list
+jot down technical specifications in a list",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/d9e5349e-8791-49c2-8ba4-839fdd1606c2
+knowledge,lean project management,optional,"lean project methodology
+lean project management approach",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/da6393d5-a53c-4863-abc7-51f36281d74e
+knowledge,Agile development,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/dba46f87-0831-49cd-a1c7-340a653c0221
+skill/competence,build business relationships,essential,"devise business relationships
+construct business relationships
+build a business relationship
+set up business relationships
+assemble business relationships
+produce business relationships
+building business relationships",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/dc72ad0a-c5dc-4abd-bc0d-ca43e82162e1
+skill/competence,estimate duration of work,essential,time estimation of work,http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/e207163b-7963-4c3e-9494-7a4bb000211b
+skill/competence,train employees,essential,"train an employee
+teach employees
+upskill employees
+instruct employees
+training employees",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/e54ff029-1ce9-447d-a5b2-eb7283a23e6e
+knowledge,document management,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/ea1bf5e5-e7f0-4d2c-a415-1c39c00512b1
+knowledge,Prototyping development,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/ed1d8bd4-cd2a-4c64-b665-56d70651026c
+knowledge,insourcing strategy,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/eff1bb34-b454-4482-8c29-65f820619f3c
+knowledge,DevOps,optional,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/f0de4973-0a70-4644-8fd4-3a97080476f4
+skill/competence,draft project documentation,optional,"write project documentation
+formulate project documents
+prepare project documentation",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/f17f94f1-88cb-4815-873a-2a9639f10729
+skill/competence,perform resource planning,essential,"",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/f5dd06b8-5d17-4932-9d03-957d0c4f5051
+knowledge,ICT process quality models,optional,"CMMI (Capability Maturity Model Integrated)
+software process quality
+Quality maturity models
+CMM",http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/fafe0b9d-dbd9-46bd-b770-26299539ce66
+knowledge,blockchain mining principles,essential,principles of mining in blockchain,http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525,http://data.europa.eu/esco/skill/fc94266b-322d-4f1d-87a0-03f999e72344

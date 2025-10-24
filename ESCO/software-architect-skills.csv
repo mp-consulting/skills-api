@@ -1,0 +1,310 @@
+skillType,preferredLabel,relationType,altLabels,occupationUri,skillUri
+knowledge,Haskell,optional,Haskell techniques,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/000f1d3d-220f-4789-9c0a-cc742521fb02
+knowledge,Erlang,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/034c29fa-c3ba-45ea-b8f3-bf8e3705e386
+knowledge,SAS language,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/04f1b938-d4d4-4cb1-a863-982af76b9d93
+skill/competence,use an application-specific interface,essential,"application-specific interface operating
+application-specific interface using
+operate an application-specific interface
+use an interface specific to the application
+using an application-specific interface
+operating an interface specific to the application
+operating an application-specific interface
+using an interface specific to the application
+operate an interface specific to the application",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/04fe962b-4017-4eb7-9139-7d69b6922bc9
+knowledge,systems development life-cycle,essential,application development life-cycle,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/09f2f811-a3fb-4de3-a70f-6420a6935575
+knowledge,Agile project management,optional,"Agile management software
+Agile project management",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/0a9acb6b-1139-4be9-b431-3a80a959f2f4
+skill/competence,use markup languages,optional,"use XHTML
+use mark-up languages
+use HTML",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/0af062de-eb43-41e9-9b96-249e2cd22d26
+knowledge,Ruby (computer programming),optional,Ruby,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/0ccdfe98-f845-4598-84a1-3dca66e9d9a3
+knowledge,Common Lisp,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/0cd6dcf1-5778-42a5-b685-4d01ae4a4871
+knowledge,Apache Maven,optional,Maven,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/0d168770-4d9c-4096-b048-a6577818d306
+knowledge,Lisp,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/0de61385-de6d-4146-ba32-1cc1bc102220
+skill/competence,design cloud architecture,optional,"design multi-tier cloud architecture
+create cloud architecture
+engineer cloud architecture",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/11430d93-c835-48ed-8e70-285fa69c9ae6
+knowledge,Visual Basic,optional,"VB
+VB.NET
+Visual Studio .NET",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/13bdd41a-2a18-441f-96db-41252c519413
+skill/competence,utilise computer-aided software engineering tools,optional,"use CASE tools
+utilize CASE tools for software design
+utilise CASE tools for software design
+utilise CASE tools
+utilize computer-aided software engineering tools",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/172020d1-e151-445b-8173-e2a5fb16fe51
+knowledge,Java (computer programming),optional,Java,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389
+skill/competence,perform risk analysis,optional,"complete  risk analysis
+finish  risk analysis
+performing a  risk analysis
+perform a risk analysis
+implement  risk analysis
+risk analysis performance
+undertake  risk analysis",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/1dd23dba-dd00-45ab-abf4-642902538317
+knowledge,computer programming,optional,"DIBOL
+Seed7
+Visual Basic .NET
+HyperTalk
+Korn-shell
+Emacs Lisp
+KnockoutJS
+computer programming
+Squirrel-script
+TACL
+cT
+Object Pascal
+Visual Basic
+Caml
+AspectJ
+PostScript
+OCaml
+Ceylon
+Dylan
+bash
+OpenCV
+Gosu
+ColdFusion
+MSVC++
+C shell
+IDL
+ALGOL
+Subversion
+Ada
+occam
+Io
+REXX
+Z shell
+BizTalk
+AppleScript
+BCPL
+X10
+GCC
+ActionScript
+INTERCAL
+LabVIEW
+Hack
+Fantom
+Tcl
+STL
+Fortran
+PL/I
+COMAL
+Rebol
+Euphoria
+Lua
+PowerShell
+AngularJS
+Curl
+AWK
+Turing",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97
+skill/competence,provide ICT consulting advice,optional,"provide advice in consulting
+provide IT consulting advice",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/283cbcd3-7101-4dbb-be37-56f3625515b1
+skill/competence,align software with system architectures,essential,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/2857540c-180b-4208-9127-e94a01871966
+knowledge,Prolog (computer programming),optional,Prolog,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/2bde42ae-e776-41c1-9ded-b07b30bfe985
+skill/competence,design process,essential,process design,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/2c28fc20-8a60-4311-8899-5ef8729c05b3
+knowledge,OpenEdge Advanced Business Language,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/300d432b-f457-4cd3-9cb1-1858c7d14954
+skill/competence,manage staff,optional,"coordinate and monitor employees
+manage subordinates
+coordinate and monitor subordinates
+conduct HR activities
+perform HR
+implement HR actions
+supervise personnel
+supervise employees
+undertake HR processes
+manage team
+manage staff
+manage personnel
+coordinate and monitor staff
+supervise staff
+manage employees",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/339ac029-066a-4985-9f9d-b3d7c8fea0bb
+skill/competence,do cloud refactoring,optional,"perform cloud refactoring
+optimise cloud features
+do cloud features refactoring
+refactor cloud services
+optimise cloud services",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/38716afc-a93b-44ab-96cc-2ecf67edcf32
+skill/competence,create software design,essential,create application design,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/3bddfd7c-ab6d-40c2-883d-5e97fb7640ba
+knowledge,JavaScript,optional,"Client-side JavaScript
+Mocha
+Escript
+CSJS
+Server-side JavaScript
+Live Script",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7
+knowledge,Perl,optional,"Practical Extraction and Report Language
+Perl
+PONIE",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/401eb8d8-6daa-4f8b-90ad-60afc71eb4f8
+knowledge,Smalltalk (computer programming),optional,"Smalltalk programming system
+Smalltalk",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/42ed3bfb-1a01-4c8b-9758-fc6438865734
+knowledge,PHP,optional,"Hypertext Preprocessor
+Personal Home Page",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/4350c38d-0fe9-4ca7-bab9-40ed7f72b04f
+knowledge,Assembly (computer programming),optional,"Assembly algorithms
+Assembly
+Assembly computer programming paradigms
+Assembly software development techniques
+Assembly software development principles",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/47b9bbcf-356c-4782-83a4-7f5a1b2b51a3
+skill/competence,provide cost benefit analysis reports,essential,"providing cost benefit analysis reports
+provide cost benefit analysis report
+create cost benefit analysis reports
+provide cost-benefit analysis reports
+generate cost benefit analysis reports
+produce cost benefit analysis reports
+provide reports on cost benefit analysis",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/48b68726-0fd6-4e03-a5eb-82236516ee7a
+knowledge,C#,optional,C Sharp,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a
+knowledge,R,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/51586df8-1c46-4b47-8583-773cb63bf00b
+knowledge,Groovy,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/52cf3037-ab53-4806-85ed-7fd21ea7f6a1
+knowledge,ASP.NET,optional,ASP.NET framework,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/56a7f561-1d55-43c9-9cd7-36a0a9bc6c50
+knowledge,APL,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/58d7a289-dafd-4363-833f-d1dc4140885e
+knowledge,object-oriented modelling,essential,"object-oriented paradigm
+knowledge of object-oriented modelling
+object-oriented modeling",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/5be3d306-6cf1-4b49-aa1d-01651dd4ba4c
+knowledge,Puppet (tools for software configuration management),optional,Puppet,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/6417a4cc-6f61-4459-a114-761a7fa0279d
+knowledge,web programming,optional,markup programming,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28
+knowledge,STAF,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/69f0167e-75d9-46cf-847f-72a592880ebb
+skill/competence,design database scheme,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511
+knowledge,security engineering,optional,"information security engineering
+security management
+network security engineering
+systems security engineering",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/6f1edc19-191f-4ba5-a048-ee69aff05bab
+knowledge,Ansible,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/6f8a40d6-f9ce-43ec-a72f-d4213a53f3ed
+skill/competence,collect customer feedback on applications,essential,analyse business objectives and customer interests,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/71746a0b-e58d-4dc4-ad03-bd84082eae21
+knowledge,unified modelling language,essential,"unified modeling  language
+standard modelling language
+uml",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/7193cb6d-8334-494f-86e5-21e6d03a47c3
+skill/competence,perform ICT troubleshooting,optional,"undertake ICT troubleshooting
+performing  ICT troubleshooting
+implement ICT troubleshooting
+complete ICT troubleshooting
+ICT troubleshooting performance",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/744442ac-c157-4350-8be0-ce454df4f5c5
+knowledge,task algorithmisation,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/7482a123-e801-48de-9733-262125671410
+skill/competence,use query languages,optional,"retrieve data using a structured query language
+data retrieving using a structured query language
+using database query language
+using structured query language
+query language using
+retrieve data using a query language
+retrieving data using a query language
+using query language
+use information retrieval query language
+use database query language
+data retrieving using a query language
+using information retrieval query language
+use structured query language
+retrieving data using a structured query language",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/75f839c2-fd9a-4ad3-8921-6e734608568d
+knowledge,ICT security legislation,optional,"ICT law
+network and information security legislation
+legal aspects of computing
+cyber-security regulation",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/7814e88f-c133-4c3b-b27f-857afa145d42
+skill/competence,develop software prototype,optional,"develop software mockup
+develop software throw-away simulation",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/797a4416-0b8d-44f3-8fcd-eb10bd0be6b4
+skill/competence,design database in the cloud,optional,"design automated cloud databases
+apply design principles for cloud database design
+design cloud data architecture
+develop cloud database design
+apply design principles for cloud data architecture",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/7e796b51-49d7-4e73-95af-2e7323763f15
+knowledge,Microsoft Visual C++,optional,"MS Visual C++
+VC++
+Visual C++
+MSVC",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/8369ede5-4200-4a44-be2e-bc60ef959259
+skill/competence,oversee development of software,essential,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/83b33952-3872-46ec-9a2e-b28f91303a7e
+knowledge,TypeScript,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/867137fb-ff1b-4ca3-99f3-cb6969aa2c68
+skill/competence,create flowchart diagram,essential,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/901105f8-3a08-453e-b1dc-23619e317fd3
+knowledge,business process modelling,essential,"business process modeling
+BPMN
+process modelling",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb
+knowledge,CoffeeScript,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/993b1e23-f2de-4bd8-b33f-f86dde1c8e9d
+knowledge,Objective-C,optional,Objective C,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/9973a5a2-7822-4161-99e9-95c781eb63f8
+knowledge,tools for software configuration management,essential,"PIKT
+tools for software version control
+revision control
+Synctool
+Bcfg2
+source control
+git
+Rudder
+ISconf
+CFEngine
+Rundeck
+OCS Inventory NG with GLPI
+NOC
+Quattor
+cdist
+NixOS
+software tools for version control
+Open pc server integration
+Local ConFiGuration system
+SmartFrog
+Radmind",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/9d2e926f-53d9-41f5-98f3-19dfaa687f3f
+knowledge,ML (computer programming),optional,"ML development principles
+ML
+ML systems",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/a4d336a6-9ffd-402a-91cc-f359716ba4e0
+knowledge,SPARK,optional,SPARK,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/af7ae54f-4649-4c16-87c7-59ba41d4d57f
+skill/competence,analyse business requirements,essential,"analyse customer product risks
+analyze  business requirements
+business requirements analysis",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/b04f377b-ee80-4b38-aca1-19d266a23b17
+knowledge,WildFly,optional,Jboss,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/b16bcbcb-1d3f-42b3-a6a5-b91348a72b70
+knowledge,AJAX,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/b4dc6e4f-dc7d-445f-8ce2-d7b9d225e282
+knowledge,C++,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f
+knowledge,SAP R3,optional,"SAP ERP 6.0: Enhancement Packages
+SAP R/2
+SAP R/3 Enterprise Central Component
+SAP R/1
+SAP R/3
+SAP R/3 Enterprise Edition
+SAP ERP
+SAP S/4 HANA",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/bb99af26-71ff-4dca-bde7-1eb1f6194426
+knowledge,Swift (computer programming),optional,"Swift algorithms
+Swift software development principles
+Swift programming paradigms
+Swift
+Swift software development techniques",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/be80acfc-b6f2-4411-9b8d-b19d9cd2556a
+knowledge,ICT project management methodologies,optional,"project management software
+prince2
+structured methodology
+agile
+Benefits realization management
+Extreme project management
+software development methodologies
+project management framework
+Critical chain project management
+Code and fix development",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9
+knowledge,MATLAB,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/c3a03c5a-c260-4c26-9b9a-873abb396f4d
+knowledge,Salt (tools for software configuration management),optional,Salt,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/c7451027-8249-405a-bb1b-342ff0f3fb3b
+skill/competence,apply ICT systems theory,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/cbe2c304-1e7d-489a-97d9-a7d3e37a9db6
+knowledge,Python (computer programming),optional,"Python 3K
+Python",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d
+knowledge,systems theory,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/cdd8b6b2-2fd9-453c-8d62-8a1dc6efcd49
+knowledge,Scratch (computer programming),optional,Scratch,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/d56fc2b5-4b0a-4e7e-9bde-a33736f6ff18
+knowledge,Process-based management,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/d5a59ca8-2e91-472e-8571-d12ce4478679
+skill/competence,define technical requirements,essential,"make a list of technical aspects
+write up technical specifications in a list
+write up a list of technical specifications
+write technical specifications
+gather technical requirements
+write up a technical specifications' list
+jot down technical specifications in a list",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/d9e5349e-8791-49c2-8ba4-839fdd1606c2
+knowledge,lean project management,optional,"lean project methodology
+lean project management approach",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/da6393d5-a53c-4863-abc7-51f36281d74e
+skill/competence,build business relationships,essential,"devise business relationships
+construct business relationships
+build a business relationship
+set up business relationships
+assemble business relationships
+produce business relationships
+building business relationships",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/dc72ad0a-c5dc-4abd-bc0d-ca43e82162e1
+knowledge,VBScript,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/dcdd5ddf-82a6-4ac3-8edc-d4b23cae9a88
+knowledge,COBOL,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/def007fa-5fed-4a5f-91a2-b0d7e3db1be1
+knowledge,Pascal (computer programming),optional,Pascal,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/e8b89eb6-51e8-4c3a-babb-88b2e110376b
+knowledge,ABAP,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/eb0e5615-1575-4a86-a1a2-7d39595033c5
+skill/competence,analyse software specifications,essential,"evaluate software design specification
+examine software requirements
+analyse software or system specifications
+assess  software specifications
+assess software systems",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998
+knowledge,Jenkins (tools for software configuration management),optional,"Jenkins Continuous Integration server
+Jenkins CI
+Jenkins",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/f47a1998-0beb-43be-9f46-380aa4d183da
+skill/competence,perform resource planning,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/f5dd06b8-5d17-4932-9d03-957d0c4f5051
+skill/competence,define software architecture,essential,"define application architecture
+define programme architecture",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/f7e2eb04-3e50-4561-bce1-7e51a1fec308
+knowledge,system design,essential,system architecture design,http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/fae27053-8924-4bfd-b565-c9fe502044c9
+skill/competence,implement data warehousing techniques,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/fd6d2981-3d4a-4ce2-9741-cfc98c5b74bd
+knowledge,Scala,optional,"",http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e,http://data.europa.eu/esco/skill/ffddfc7c-a9dd-449f-9e96-882dc447c8b6
