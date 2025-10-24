@@ -1,7 +1,7 @@
 # Gemfile
 source 'https://rubygems.org'
 
-ruby '3.3.5'
+ruby '3.3.6'
 
 # Standard library gems (explicit for Ruby 3.4+)
 gem 'base64'

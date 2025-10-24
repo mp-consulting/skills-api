@@ -1,0 +1,38 @@
+{
+  "name": "Skills API",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "remoteEnv": {
+    "RUBY_VERSION": "3.3.6"
+  },
+  "postCreateCommand": "bundle install && chmod +x .devcontainer/setup.sh && .devcontainer/setup.sh",
+  "forwardPorts": [],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Shopify.ruby-lsp",
+        "testdouble.vscode-standard-ruby",
+        "mechatroner.rainbow-csv"
+      ],
+      "settings": {
+        "[ruby]": {
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "Shopify.ruby-lsp"
+        },
+        "rubyLsp.formatter": "standard"
+      }
+    }
+  },
+  "containerEnv": {
+    "BUNDLER_VERSION": "2.5"
+  },
+  "mounts": [],
+  "runArgs": [
+    "--rm"
+  ],
+  "postStartCommand": "echo 'Skills API dev container ready!'",
+  "onCreateCommand": "echo 'Creating Skills API development environment...'",
+  "remoteUser": "vscode"
+}
