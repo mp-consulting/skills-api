@@ -507,18 +507,6 @@
       </div>
       <% end %>
 
-      <!-- Missing Essential Skills -->
-      <% if missing_items.any? %>
-      <div class="section">
-        <h2>⚠️ Missing Essential Skills (<%= missing_items.count %>)</h2>
-        <div class="skills-list missing-skills">
-          <% missing_items.each do |skill| %>
-          <div class="skill-item missing"><span class="skill-icon">○</span> <%= skill %></div>
-          <% end %>
-        </div>
-      </div>
-      <% end %>
-
       <!-- Optional Skills -->
       <% if optional_items.any? %>
       <div class="section">
@@ -526,6 +514,18 @@
         <div class="skills-list optional-skills">
           <% optional_items.each do |skill| %>
           <div class="skill-item optional"><span class="skill-icon">●</span> <%= skill %></div>
+          <% end %>
+        </div>
+      </div>
+      <% end %>
+
+      <!-- Missing Essential Skills -->
+      <% if missing_items.any? %>
+      <div class="section">
+        <h2>⚠️ Missing Essential Skills (<%= missing_items.count %>)</h2>
+        <div class="skills-list missing-skills">
+          <% missing_items.each do |skill| %>
+          <div class="skill-item missing"><span class="skill-icon">○</span> <%= skill %></div>
           <% end %>
         </div>
       </div>
