@@ -87,6 +87,95 @@ class SkillsAssessmentCLI < Thor
     end
   end
 
+  desc 'identify-roles CV_FILE', 'Identify relevant roles from CV'
+  option :output, aliases: '-o', desc: 'Output file path for JSON results'
+  option :logging, aliases: '-l', type: :boolean, default: false, desc: 'Enable LLM logging'
+
+  def identify_roles(cv_file)
+    # Validate CV file
+    unless File.exist?(cv_file)
+      say "❌ Error: CV file '#{cv_file}' not found", :red
+      exit 1
+    end
+
+    # Set logging ENV if requested
+    ENV['LLM_LOGGING'] = 'true' if options[:logging]
+
+    # Validate API key
+    api_key = ENV['ANTHROPIC_API_KEY']
+    if api_key.nil? || api_key.empty?
+      say '❌ Error: ANTHROPIC_API_KEY environment variable not set', :red
+      say 'Add your key to the .env file:', :yellow
+      say 'ANTHROPIC_API_KEY=your-key-here'
+      exit 1
+    end
+
+    # Identify roles
+    say "📄 Loading CV: #{cv_file}", :cyan
+    say "🔍 Analyzing CV to identify relevant roles...", :cyan
+    say '⏳ This may take a moment...', :yellow
+
+    identifier = SkillsAssessment::RoleIdentifier.new(cv_file, api_key: api_key)
+
+    begin
+      result = identifier.identify_roles
+
+      # Display results
+      say ''
+      say '=' * 80, :blue
+      say 'Role Identification Results', :blue
+      say '=' * 80, :blue
+
+      # Display summary
+      say "\n📋 Career Summary:", :cyan
+      say result['summary'], :white
+
+      # Display primary role
+      say "\n🎯 Primary Role Match:", :green
+      say "#{result['primary_role']}", :green
+
+      # Display identified roles
+      if result['identified_roles'].any?
+        say "\n✅ Identified Roles:", :green
+        result['identified_roles'].each do |role_data|
+          confidence_pct = (role_data['confidence'] * 100).round(1)
+          confidence_color = if role_data['confidence'] >= 0.85
+                               :green
+                             elsif role_data['confidence'] >= 0.75
+                               :yellow
+                             else
+                               :cyan
+                             end
+
+          say "  • #{role_data['role']} (#{confidence_pct}%)", confidence_color
+          say "    #{role_data['justification']}", :white
+          if role_data['key_evidence'] && role_data['key_evidence'].any?
+            say "    Evidence: #{role_data['key_evidence'].join(', ')}", :cyan
+          end
+        end
+      else
+        say "\n⚠️  No matching roles identified", :yellow
+      end
+
+      # Save to file if requested
+      if options[:output]
+        output_path = options[:output]
+        output_path = File.join('reports', output_path) if !output_path.include?('/') && !output_path.include?('\\')
+
+        Dir.mkdir('reports') unless Dir.exist?('reports')
+        File.write(output_path, JSON.pretty_generate(result))
+
+        say "\n💾 Results saved to: #{output_path}", :green
+      end
+
+      say ''
+    rescue StandardError => e
+      say "❌ Error: Failed to identify roles", :red
+      say "Error: #{e.message}", :red
+      exit 1
+    end
+  end
+
   private
 
   def determine_output_path(output_option, role, cv_file)
