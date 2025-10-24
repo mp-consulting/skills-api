@@ -3,10 +3,22 @@
 
 require 'zeitwerk'
 
-# Create and configure loader for the gem
-loader = Zeitwerk::Loader.for_gem
+# Create a custom loader for lib directory
+loader = Zeitwerk::Loader.new
 
-# Setup eager loading
+# Add lib directory to the loader
+loader.push_dir(File.expand_path('../lib', __dir__))
+
+# Add inflector rules for custom naming
+loader.inflector.inflect(
+  'llm_client' => 'LLMClient'
+)
+
+# Setup the loader first
+loader.setup
+
+# Then eager load all classes
 loader.eager_load
 
+# Return loader
 loader

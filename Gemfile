@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 
 ruby '3.3.5'
 
+# Standard library gems (explicit for Ruby 3.4+)
+gem 'base64'
+
 # CLI Framework
 gem 'thor', '~> 1.3'
 

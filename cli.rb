@@ -9,18 +9,17 @@ require 'json'
 require 'base64'
 require 'erb'
 
-# Load classes via Zeitwerk
+# Load all classes via Zeitwerk (no manual requires needed)
 require_relative 'config/zeitwerk'
 
-# Now use classes from SkillsAssessment module
 class SkillsAssessmentCLI < Thor
-  desc "analyze ROLE CV_FILE", "Analyze CV for a specific role"
-  option :output, aliases: "-o", desc: "Output file path (.json or .html)"
-  option :logging, aliases: "-l", type: :boolean, default: false, desc: "Enable LLM logging"
+  desc 'analyze ROLE CV_FILE', 'Analyze CV for a specific role'
+  option :output, aliases: '-o', desc: 'Output file path (.json or .html)'
+  option :logging, aliases: '-l', type: :boolean, default: false, desc: 'Enable LLM logging'
 
   def analyze(role, cv_file)
     # Validate role
-    valid_roles = ['data-scientist', 'it-manager', 'software-architect']
+    valid_roles = %w[data-scientist it-manager software-architect]
     unless valid_roles.include?(role)
       say "❌ Error: Invalid role '#{role}'", :red
       say "Valid roles: #{valid_roles.join(', ')}", :yellow
@@ -39,9 +38,9 @@ class SkillsAssessmentCLI < Thor
     # Validate API key
     api_key = ENV['ANTHROPIC_API_KEY']
     if api_key.nil? || api_key.empty?
-      say "❌ Error: ANTHROPIC_API_KEY environment variable not set", :red
-      say "Add your key to the .env file:", :yellow
-      say "ANTHROPIC_API_KEY=your-key-here"
+      say '❌ Error: ANTHROPIC_API_KEY environment variable not set', :red
+      say 'Add your key to the .env file:', :yellow
+      say 'ANTHROPIC_API_KEY=your-key-here'
       exit 1
     end
 
@@ -58,7 +57,7 @@ class SkillsAssessmentCLI < Thor
     response = analyze_cv(role, cv_file, api_key, config)
 
     # Clean and parse response
-    say "🔍 Parsing assessment results...", :cyan
+    say '🔍 Parsing assessment results...', :cyan
     cleaner = SkillsAssessment::ResponseCleaner.new
     cleaned = cleaner.clean(response)
 
@@ -70,7 +69,7 @@ class SkillsAssessmentCLI < Thor
 
       # Save to file
       if output_path
-        say ""
+        say ''
         output_format = output_path.end_with?('.html') ? :html : :json
 
         if output_format == :html
@@ -82,9 +81,8 @@ class SkillsAssessmentCLI < Thor
           say "💾 Assessment saved to: #{output_path}", :green
         end
       end
-
     rescue JSON::ParserError => e
-      say "❌ Error: Failed to parse LLM response as JSON", :red
+      say '❌ Error: Failed to parse LLM response as JSON', :red
       say "Error: #{e.message}", :red
       exit 1
     end
@@ -135,26 +133,26 @@ class SkillsAssessmentCLI < Thor
 
     esco_skills = load_esco_skills(role)
 
-    if template.include?('%{esco_skills}')
-      template % { cv_text: "[CV content will be provided as PDF attachment]", esco_skills: esco_skills }
+    if template.include?('%<esco_skills>s')
+      format(template, cv_text: '[CV content will be provided as PDF attachment]', esco_skills: esco_skills)
     else
-      template % { cv_text: "[CV content will be provided as PDF attachment]" }
+      format(template, cv_text: '[CV content will be provided as PDF attachment]')
     end
   end
 
   def load_esco_skills(role)
     esco_file = case role
                 when 'data-scientist'
-                  'ESCO/data-scientist-skills.csv'
+                  'lib/skills_assessment/ESCO/data-scientist-skills.csv'
                 when 'it-manager'
-                  'ESCO/it-manager-skills.csv'
+                  'lib/skills_assessment/ESCO/it-manager-skills.csv'
                 when 'software-architect'
-                  'ESCO/software-architect-skills.csv'
+                  'lib/skills_assessment/ESCO/software-architect-skills.csv'
                 else
                   nil
                 end
 
-    return "" unless esco_file && File.exist?(esco_file)
+    return '' unless esco_file && File.exist?(esco_file)
 
     lines = File.readlines(esco_file)
     essential_skills = []
@@ -162,6 +160,7 @@ class SkillsAssessmentCLI < Thor
 
     lines.each_with_index do |line, index|
       next if index == 0
+
       parts = line.strip.split(',', 2)
       next if parts.length < 2
 
@@ -184,24 +183,28 @@ class SkillsAssessmentCLI < Thor
     prompt = prepare_prompt(role, config)
     client = SkillsAssessment::LLMClient.new(api_key)
 
-    say "🚀 Sending CV to Claude for OCR and analysis...", :cyan
-    say "⏳ This may take a moment...", :yellow
+    say '🚀 Sending CV to Claude for OCR and analysis...', :cyan
+    say '⏳ This may take a moment...', :yellow
 
     client.call_with_pdf(prompt, cv_path, config[:max_tokens])
   end
 
   def format_and_display(assessment, config)
-    say ""
-    say "=" * 80, :blue
+    say ''
+    say '=' * 80, :blue
     say config[:title], :blue
-    say "=" * 80, :blue
+    say '=' * 80, :blue
 
     # Display overall score
     overall = assessment['overall_readiness']
     score = overall&.dig('score') || 'N/A'
     summary = overall&.dig('summary') || 'No summary available'
 
-    score_color = score.to_i >= 8 ? :green : (score.to_i >= 6 ? :yellow : :red)
+    score_color = if score.to_i >= 8
+                    :green
+                  else
+                    (score.to_i >= 6 ? :yellow : :red)
+                  end
     say "\n📊 Overall Score: #{score}/10", score_color
     say "📝 Summary: #{summary}", :cyan
 
@@ -223,7 +226,7 @@ class SkillsAssessmentCLI < Thor
       missing.each { |skill| say "  ○ #{skill}", :yellow }
     end
 
-    say ""
+    say ''
   end
 
   def generate_html_report(assessment, config, cv_filename)
