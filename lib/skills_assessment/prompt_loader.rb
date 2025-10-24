@@ -58,7 +58,8 @@ module SkillsAssessment
       content = content.gsub(/```\w*\n?/, '')
 
       # Fix Ruby string interpolation syntax: {variable} -> %{variable}
-      content = content.gsub(/\{(\w+)\}/, '%{\1}')
+      # Only convert braces that don't already have % in front
+      content = content.gsub(/(?<!%)(\{)(\w+)(\})/, '%{\2}')
 
       # Clean up extra whitespace and empty lines
       content = content.split("\n").map(&:strip).reject(&:empty?).join("\n")

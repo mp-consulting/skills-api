@@ -111,11 +111,8 @@ class SkillsAssessmentCLI < Thor
 
     esco_skills = load_esco_skills(role)
 
-    if template.include?('%<esco_skills>s')
-      format(template, cv_text: '[CV content will be provided as PDF attachment]', esco_skills: esco_skills)
-    else
-      format(template, cv_text: '[CV content will be provided as PDF attachment]')
-    end
+    # Use format() with %{variable} syntax - always include esco_skills in case template uses it
+    format(template, cv_text: '[CV content will be provided as PDF attachment]', esco_skills: esco_skills)
   end
 
   def load_esco_skills(role)

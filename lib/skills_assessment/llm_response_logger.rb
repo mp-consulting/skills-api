@@ -45,7 +45,7 @@ module SkillsAssessment
 
     def log_data
       {
-        timestamp: Time.now.iso8601,
+        timestamp: Time.now.to_s,
         model: Constants::LLM_MODEL,
         max_tokens: @max_tokens,
         temperature: Constants::LLM_TEMPERATURE,
