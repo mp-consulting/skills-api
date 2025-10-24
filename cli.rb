@@ -112,7 +112,7 @@ class SkillsAssessmentCLI < Thor
 
     # Identify roles
     say "📄 Loading CV: #{cv_file}", :cyan
-    say "🔍 Analyzing CV to identify relevant roles...", :cyan
+    say '🔍 Analyzing CV to identify relevant roles...', :cyan
     say '⏳ This may take a moment...', :yellow
 
     identifier = SkillsAssessment::RoleIdentifier.new(cv_file, api_key: api_key)
@@ -170,7 +170,7 @@ class SkillsAssessmentCLI < Thor
 
       say ''
     rescue StandardError => e
-      say "❌ Error: Failed to identify roles", :red
+      say '❌ Error: Failed to identify roles', :red
       say "Error: #{e.message}", :red
       exit 1
     end
