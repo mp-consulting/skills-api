@@ -1,578 +1,361 @@
-# Skills Assessment API# CV Skills Assessment Tool
+# Skills API - CV Skills Assessment Tool
 
+A powerful CLI tool for analyzing CVs and identifying professional skills using AI. This project leverages Claude AI to perform comprehensive skills assessment across multiple roles and provides detailed reports in JSON and HTML formats.
 
+## Features
 
-A sophisticated Ruby CLI application for analyzing CVs/resumes and identifying professional skills across multiple role perspectives. Uses Claude AI for intelligent CV analysis with role identification orchestration and HTML report generation.A Ruby application that analyzes CVs/resumes to assess hard, soft, and leadership skills using both keyword matching and Anthropic Claude LLM analysis.
+- **Multi-Role Analysis**: Assess CVs for specialized roles including:
+  - Data Scientist
+  - IT Manager
+  - Software Architect
 
+- **Comprehensive Skill Assessment**: 
+  - Hard skills (technical, programming, tools, frameworks)
+  - Soft skills (communication, teamwork, leadership)
+  - Leadership and management capabilities
+  - ESCO skills framework alignment
 
+- **Role Identification**: Automatically identify relevant roles from a CV based on experience and background
 
-## 🎯 Features## Features
+- **Flexible Output Formats**:
+  - Interactive HTML reports with visual presentation
+  - JSON data for programmatic access
+  - Colored console output for quick feedback
 
+- **AI-Powered Analysis**: Integrates with Anthropic Claude for intelligent CV parsing and skill extraction
 
+- **Logging & Debugging**: Optional LLM response logging for debugging and analysis
 
-### Core Functionality- **Dual Input Modes**:
-
-- **Two-Stage CV Analysis**  - CV-based assessment: Process PDF resumes with text extraction
-
-  1. **Role Identification** - Automatically detect relevant professional roles from CV  - Research-based assessment: Generate skills assessment from LLM knowledge only
-
-  2. **Role-Specific Assessment** - Detailed skill analysis from role perspective- **PDF Processing**: Extracts text from PDF CVs
-
-- **Multi-language Support**: Handles French and English CVs
-
-- **Multiple Role Support**- **Dual Assessment Modes**:
-
-  - Data Scientist  - LLM-powered assessment (Anthropic Claude 3.5 Sonnet) - Primary
-
-  - IT Manager  - Keyword-based assessment (fallback)
-
-  - Software Architect- **LLM Knowledge Snapshots**: Direct assessment generation using LLM's knowledge base
-
-- **Structured Output**: JSON format matching the skills assessment schema
-
-- **Intelligent Analysis**- **Environment Configuration**: Secure API key management via `.env` file
-
-  - ESCO (European Skills/Competences/Occupations) framework alignment
-
-  - Confidence scoring with detailed justifications## Setup
-
-  - Evidence extraction from CV
-
-  - Skill categorization and proficiency levels### 1. Install Dependencies
-
-
-
-- **Report Generation**```bash
-
-  - Interactive HTML reports with styled outputgem install pdf-reader anthropic dotenv nokogiri
-
-  - Professional skill summaries```
-
-  - Readiness assessment scores
-
-  - JSON export for programmatic use### 2. Configure Environment
-
-
-
-### Recent EnhancementsCreate a `.env` file in the project root:
-
-- ✅ Role identification via CLI (`identify-roles` command)
-
-- ✅ Two-stage analysis orchestration```bash
-
-- ✅ Presenter Pattern for clean architecture# Anthropic API Key for Claude LLM assessment
-
-- ✅ 87% reduction in HtmlReportGenerator complexity# Get your key from: https://console.anthropic.com/
-
-- ✅ Service-oriented architecture with proper error handlingANTHROPIC_API_KEY=your-anthropic-api-key-here
+## Project Structure
 
 ```
-
-## 📋 Requirements
-
-### 3. Prepare CV (Optional)
-
-- Ruby 3.3.5 (managed with asdf)
-
-- BundlerFor CV-based assessment, place your PDF CV in the project directory.
-
-- Anthropic API Key (Claude AI)
-
-### 4. Run the Assessment
-
-## 🚀 Installation
-
-#### Option 1: Assess from CV file
-
-1. **Clone the repository**```bash
-
-```bashruby cv_skills_assessor.rb mickael_palma_cv.pdf
-
-git clone <repository>```
-
-cd skills-api
-
-```#### Option 2: Assess from web research only
-
-```bash
-
-2. **Install Ruby (using asdf)**ruby cv_skills_assessor.rb --name "Mickaël Palma"
-
-```bash```
-
-asdf install
-
-```The script will automatically:
-
-- Load configuration from `.env`
-
-3. **Install dependencies**- For CV files: Process the PDF and extract skills using Claude 3.5 Sonnet
-
-```bash- For names: Conduct comprehensive web research and generate skills assessment
-
-bundle install- Output detailed JSON assessment results
-
-```
-
-## Current Status ✅
-
-4. **Configure environment**
-
-```bash- ✅ PDF text extraction working
-
-cp .env.example .env- ✅ Person information extraction (name, email)
-
-# Edit .env and add your Anthropic API key- ✅ LLM-powered hard skills assessment
-
-echo "ANTHROPIC_API_KEY=your-key-here" >> .env- ✅ LLM-powered soft skills assessment
-
-```- ✅ LLM-powered leadership skills assessment
-
-- ✅ Environment configuration with `.env`
-
-## 💻 Usage- ✅ French language support
-
-- ✅ Web research integration with LLM reasoning
-
-### Command: `identify-roles`- ✅ **Research-based assessment (name-only input)**
-
-Identify relevant professional roles from a CV.- ✅ Structured JSON output
-
-- ✅ Overall rating calculation
-
-```bash- ✅ Robust error handling and fallbacks
-
-# Display role identification results
-
-ruby cli.rb identify-roles CV_File.pdf## Output Format
-
-
-
-# Save results to JSON fileThe tool generates comprehensive JSON assessments:
-
-ruby cli.rb identify-roles CV_File.pdf -o roles.json
-
-**Key Features:**
-
-# Enable LLM logging- **Person Information**: Extracted from CV or generated for name-based assessments
-
-ruby cli.rb identify-roles CV_File.pdf -l- **Assessment Metadata**: Date, assessor type, overall rating
-
-```- **Skills Breakdown**: Hard, soft, and leadership skills with detailed analysis
-
-- **Explanation Field**: LLM provides reasoning for assessment results, especially when no verified information is available
-
-**Output Example:**- **Development Plan**: Placeholder for future enhancement
-
-```
-
-📋 Career Summary:```json
-
-Seasoned technology executive with 20+ years of experience...```json
-
-{
-
-🎯 Primary Role Match:  "person": {
-
-it-manager    "name": "Mickaël PALMA",
-
-    "email": "mickael.palma@mac.com",
-
-✅ Identified Roles:    "role": ""
-
-  • it-manager (95.0%)  },
-
-    Extensive experience as CTO and technical leadership...  "assessment": {
-
-  • software-architect (92.0%)    "date": "2025-10-17",
-
-    Deep technical expertise in architecture design...    "assessor": "Automated CV Analysis with Web Research",
-
-  • data-scientist (68.0%)    "overall_rating": 6.8,
-
-    Experience managing data teams...    "explanation": "I do not have any specific, verified information about Mickael PALMA in my training data from reliable sources such as LinkedIn, company websites, professional publications, official certifications, GitHub, or academic papers. Without access to real-time data or specific verified records about this individual, I cannot provide any professional insights that meet the critical requirements for reliability and verification you've specified.\n\nTo obtain accurate professional information about Mickael PALMA, I recommend:\n1. Directly reviewing their LinkedIn profile\n2. Checking their GitHub account if they have one\n3. Searching for publications in academic databases\n4. Reviewing company websites where they may have worked\n5. Looking for professional certifications through official certification bodies"
-
-```  },
-
-  "skills": {
-
-### Command: `analyze`    "hard": [
-
-Perform detailed role-specific skill assessment.      {
-
-        "category": "Programming Languages",
-
-```bash        "skills": [
-
-# Analyze CV for specific role          {
-
-ruby cli.rb analyze data-scientist CV_File.pdf            "name": "Ruby",
-
-            "level": 8,
-
-# Save to HTML report            "experience_years": 10,
-
-ruby cli.rb analyze data-scientist CV_File.pdf -o report.html            "certifications": [],
-
-            "projects": ["API Development", "Web Applications"]
-
-# Save to JSON          }
-
-ruby cli.rb analyze data-scientist CV_File.pdf -o report.json        ]
-
-      }
-
-# Enable logging    ],
-
-ruby cli.rb analyze data-scientist CV_File.pdf -o report.html -l    "soft": [
-
-```      {
-
-        "name": "Leadership",
-
-**Output Example:**        "level": 9,
-
-```        "description": "Proven ability to lead and inspire technical teams",
-
-📊 Overall Score: 8/10        "examples": ["CTO at multiple companies", "Led tribe of 40+ people"]
-
-📝 Summary: Highly qualified senior data scientist...      }
-
-    ],
-
-✅ Identified Skills (15):    "leadership": [
-
-  • Machine Learning - Level: 8/10, Confidence: 95%      {
-
-  • Deep Learning - Level: 7/10, Confidence: 92%        "name": "Team Management",
-
-  • Python Programming - Level: 8/10, Confidence: 90%        "level": 9,
-
-  ...        "description": "Extensive experience managing technical teams",
-
-        "examples": ["Scaled data team to 40+ people", "Managed Scrum teams"]
-
-⚠️  Missing Essential Skills (3):      }
-
-  ○ Advanced Statistical Modeling    ]
-
-  ○ Time Series Analysis  }
-
-  ...}
-
-``````
-
-```
-
-## 📁 Project Structure
-
-## Assessment Methods
-
-```
-
-skills-api/### LLM Assessment (Primary)
-
-├── lib/skills_assessment/- **Model**: Claude 3.5 Sonnet
-
-│   ├── role_identifier.rb              # Role identification service- **Capabilities**:
-
-│   ├── html_report_generator.rb        # HTML report generation  - Intelligent skill detection with context
-
-│   ├── llm_client.rb                   # Claude API integration  - Evidence-based proficiency scoring (1-10 scale)
-
-│   ├── response_cleaner.rb             # JSON response parsing  - Specific examples from CV text
-
-│   ├── prompt_loader.rb                # Prompt template loading  - French language understanding
-
-│   ├── role_config.rb                  # Role configuration service  - Leadership and soft skills analysis
-
-│   ├── error.rb                        # Custom exception classes  - **LLM Knowledge Snapshots**: Direct assessment generation for any candidate name
-
-│   ├── llm_response_logger.rb          # LLM response logging
-
-│   ├── presenters/                     # Presenter Pattern classes### Keyword Matching (Fallback)
-
-│   │   ├── config_presenter.rb- Pattern-based skill identification
-
-│   │   ├── readiness_presenter.rb- Frequency-based level assignment
-
-│   │   ├── skills_presenter.rb- Works without API configuration
-
-│   │   ├── essential_skills_presenter.rb
-
-│   │   └── report_presenter.rb## Debugging and Logging
-
-│   ├── prompts/                        # Prompt templates
-
-│   │   ├── role-identification.md### LLM Response Logs
-
-│   │   ├── data-scientist-skills-assessment.md
-
-│   │   ├── it-manager-skills-assessment.mdThe system automatically logs all LLM API responses to files for debugging and analysis:
-
-│   │   └── software-architect-skills-assessment.md
-
-│   ├── templates/- **Location**: `llm_logs/` directory (created automatically)
-
-│   │   └── report.html.erb             # HTML report template- **Format**: JSON files with timestamps
-
-│   └── ESCO/                           # ESCO skill definitions- **Contents**: Raw API responses, prompts, parameters, and extracted text
-
-│       ├── data-scientist-skills.csv
-
-│       ├── it-manager-skills.csv#### Analyzing Logs
-
-│       └── software-architect-skills.csv
-
-├── cli.rb                              # Main CLI interfaceUse the provided analysis script:
-
+skills-api/
+├── cli.rb                          # Main CLI entry point (Thor-based)
+├── Gemfile                         # Ruby dependencies
 ├── config/
-
-│   └── zeitwerk.rb                     # Class autoloading configuration```bash
-
-├── lib/skills_assessment/constants.rb  # Constants and configurationruby analyze_llm_logs.rb
-
-└── Gemfile                             # Ruby dependencies```
-
+│   └── zeitwerk.rb                 # Code auto-loading configuration
+├── lib/skills_assessment/
+│   ├── constants.rb                # Application constants
+│   ├── error.rb                    # Custom error classes
+│   ├── llm_client.rb               # Anthropic Claude API client
+│   ├── response_cleaner.rb         # JSON response parsing & cleaning
+│   ├── prompt_loader.rb            # LLM prompt template loader
+│   ├── role_config.rb              # Role configurations and settings
+│   ├── role_identifier.rb          # CV role identification logic
+│   ├── html_report_generator.rb    # HTML report generation
+│   ├── llm_response_logger.rb      # LLM response logging
+│   ├── ESCO/                       # ESCO skill taxonomies
+│   │   ├── data-scientist-skills.csv
+│   │   ├── it-manager-skills.csv
+│   │   └── software-architect-skills.csv
+│   ├── prompts/                    # LLM prompt templates
+│   │   ├── data-scientist-skills-assessment.md
+│   │   ├── data-scientist-skills-identification.md
+│   │   ├── hard-skills-assessment.md
+│   │   ├── it-manager-skills-assessment.md
+│   │   ├── leadership-skills-assessment.md
+│   │   ├── role-identification.md
+│   │   ├── search-query-generation.md
+│   │   ├── soft-skills-assessment.md
+│   │   ├── software-architect-skills-assessment.md
+│   │   ├── web-research-assessment.md
+│   │   └── web-search-analysis.md
+│   ├── templates/
+│   │   └── report.html.erb         # HTML report template
+│   └── presenters/                 # Result presentation classes
+│       ├── config_presenter.rb
+│       ├── essential_skills_presenter.rb
+│       ├── readiness_presenter.rb
+│       ├── report_presenter.rb
+│       └── skills_presenter.rb
+├── reports/                        # Output directory for generated reports
+└── logs/                           # LLM response logs (when logging enabled)
 ```
 
-This will show a summary of all logged LLM interactions including:
+## Requirements
 
-## 🏗️ Architecture- Timestamps and model information
+- Ruby 3.3.5+
+- Anthropic Claude API key
+- PDF format CVs for analysis
 
-- Token usage statistics
+## Installation
 
-### Design Patterns Used- Response previews
-
-- Success/failure status
-
-1. **Service Objects**
-
-   - `RoleIdentifier` - Role identification service#### Log File Structure
-
-   - `RoleConfig` - Configuration management
-
-   - `LLMResponseLogger` - Logging serviceEach log file contains:
-
-```json
-
-2. **Presenter Pattern**{
-
-   - Separates data presentation from rendering  "timestamp": "2025-10-17T18:05:58+01:00",
-
-   - Five specialized presenters for different data aspects  "model": "claude-sonnet-4-5-20250929",
-
-   - Clean template interface  "max_tokens": 1500,
-
-  "temperature": 0.1,
-
-3. **Error Hierarchy**  "prompt_preview": "Based on your training data...",
-
-   - Custom exception classes with context  "raw_response": { /* Full API response */ },
-
-   - Proper error propagation and handling  "response_text": "Extracted text content",
-
-  "success": true
-
-4. **Query Objects** (Planned)}
-
-   - `ESCOSkillsLoader` - ESCO skills management```
-
-
-
-### SOLID PrinciplesThis feature helps with:
-
-- Troubleshooting API issues
-
-✅ **Single Responsibility** - Each class has one reason to change- Understanding LLM behavior
-
-✅ **Open/Closed** - Open for extension, closed for modification- Analyzing response quality
-
-✅ **Liskov Substitution** - Presenters follow consistent interface- Debugging parsing problems
-✅ **Interface Segregation** - Classes expose only necessary methods
-✅ **Dependency Inversion** - Depends on abstractions, not concrete classes
-
-### Two-Stage Analysis Workflow
-
-```
-┌──────────────────────────────────────────┐
-│  Stage 1: Role Identification            │
-│  - Analyze CV                            │
-│  - Identify relevant roles               │
-│  - Return confidence scores              │
-└──────────────┬───────────────────────────┘
-               │
-               ▼
-        ┌──────────────┐
-        │ Select Roles │
-        └──────┬───────┘
-               │
-               ▼
-┌──────────────────────────────────────────┐
-│  Stage 2: Role-Specific Assessment       │
-│  - For each role:                        │
-│  - Load role-specific prompt             │
-│  - Analyze skills                        │
-│  - Generate reports                      │
-└──────────────────────────────────────────┘
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd skills-api
 ```
 
-## 📊 Analysis Output
+2. Install dependencies:
+```bash
+bundle install
+```
 
-### HTML Reports Include:
-- Professional score (0-10)
-- Overall assessment summary
+3. Configure your environment:
+```bash
+cp .env.example .env
+```
+
+4. Add your Anthropic API key to `.env`:
+```
+ANTHROPIC_API_KEY=your-api-key-here
+```
+
+## Usage
+
+### Analyze CV for a Specific Role
+
+Assess a candidate's CV against requirements for a specific role:
+
+```bash
+ruby cli.rb analyze <role> <cv_file> [options]
+```
+
+**Parameters:**
+- `<role>`: Target role (data-scientist, it-manager, software-architect)
+- `<cv_file>`: Path to the CV PDF file
+
+**Options:**
+- `-o, --output <path>`: Save output to file (.json or .html)
+- `-l, --logging`: Enable LLM response logging for debugging
+
+**Examples:**
+
+Analyze CV and display results in console:
+```bash
+ruby cli.rb analyze data-scientist CV_John.pdf
+```
+
+Generate HTML report:
+```bash
+ruby cli.rb analyze software-architect CV_Jane.pdf -o jane-report.html
+```
+
+Save as JSON with logging enabled:
+```bash
+ruby cli.rb analyze it-manager CV_Mike.pdf -o mike-assessment.json -l
+```
+
+### Identify Relevant Roles
+
+Analyze a CV to identify which roles the candidate is best suited for:
+
+```bash
+ruby cli.rb identify-roles <cv_file> [options]
+```
+
+**Parameters:**
+- `<cv_file>`: Path to the CV PDF file
+
+**Options:**
+- `-o, --output <path>`: Save results to JSON file
+- `-l, --logging`: Enable LLM response logging
+
+**Examples:**
+
+Identify roles and display in console:
+```bash
+ruby cli.rb identify-roles CV_Alice.pdf
+```
+
+Save role identification results:
+```bash
+ruby cli.rb identify-roles CV_Alice.pdf -o alice-roles.json
+```
+
+## Configuration
+
+### Role Configuration
+
+Each role is configured with:
+- Assessment prompts for specific skill areas
+- ESCO skills taxonomy
+- Maximum token limits for LLM responses
+- Custom display titles
+
+Valid roles are defined in `lib/skills_assessment/constants.rb`:
+- `data-scientist`
+- `it-manager`
+- `software-architect`
+
+### LLM Configuration
+
+Configuration for Anthropic Claude API in `lib/skills_assessment/constants.rb`:
+- **Model**: claude-sonnet-4-5-20250929
+- **Temperature**: 0.1 (deterministic)
+- **Default Max Tokens**: 2000
+- **API Timeout**: 30 seconds
+- **Retry Policy**: 3 attempts with exponential backoff
+
+### ESCO Skills
+
+The project includes ESCO (European Skills, Competences and Qualifications Ontology) skill taxonomies for each role:
+- First 50 skills per role are marked as "Essential"
+- Remaining skills are marked as "Optional"
+- Used to validate and assess candidate skills
+
+## Output Formats
+
+### HTML Reports
+
+Interactive reports with:
+- Overall readiness score (0-10)
 - Identified skills with proficiency levels
-- Confidence scores for each skill
-- Evidence from CV
-- Strengths and development areas
-- Essential skills found
 - Missing essential skills
-- Optional skills matched
+- Visual representation of skill levels
+- Career readiness summary
 
-### JSON Output Includes:
-- Role identification data
-- Confidence scores
-- Career profile summary
-- Key evidence per role
-- Detailed skill assessments
-- Proficiency levels and experience years
+Location: `reports/` directory
 
-## 🔑 Key Technologies
+### JSON Output
 
-- **Ruby 3.3.5** - Programming language
-- **Thor 1.4.0** - CLI framework
-- **Zeitwerk 2.7.3** - Class autoloading
-- **Anthropic Claude AI** - LLM for CV analysis
-- **ERB** - HTML templating
-- **CSV** - ESCO skills data format
+Structured data including:
+- Overall readiness assessment
+- Identified skills with confidence scores
+- Missing essential skills
+- Detailed analysis per skill
 
-## 📝 Environment Variables
-
-```bash
-# Required
-ANTHROPIC_API_KEY=your-anthropic-api-key
-
-# Optional
-LLM_LOGGING=true  # Enable detailed LLM response logging
+Example structure:
+```json
+{
+  "overall_readiness": {
+    "score": 8.5,
+    "summary": "Strong candidate with relevant experience..."
+  },
+  "identified_skills": [
+    {
+      "skill_name": "Python",
+      "proficiency_level": 9,
+      "confidence_score": 0.95,
+      "evidence": "..."
+    }
+  ],
+  "missing_essential_skills": [
+    "TensorFlow",
+    "Data Engineering"
+  ]
+}
 ```
 
-## 🧪 Testing
+## Logging
 
-### Manual Testing
-Test all three roles:
-```bash
-ruby cli.rb analyze data-scientist CV_File.pdf -o report_ds.html
-ruby cli.rb analyze it-manager CV_File.pdf -o report_it.html
-ruby cli.rb analyze software-architect CV_File.pdf -o report_sa.html
+Enable LLM response logging with the `-l` or `--logging` flag. Logs are saved to:
+```
+logs/llm/llm_response_YYYYMMDD_HHMMSS.json
 ```
 
-### Role Identification
-```bash
-ruby cli.rb identify-roles CV_File.pdf
-ruby cli.rb identify-roles CV_File.pdf -o roles.json
+Useful for:
+- Debugging assessment issues
+- Analyzing LLM responses
+- Understanding skill extraction logic
+- Troubleshooting JSON parsing errors
+
+## API Integration
+
+### Anthropic Claude API
+
+The project uses the Anthropic Claude API for:
+1. PDF text extraction and OCR
+2. CV content analysis
+3. Skill identification
+4. Role matching
+5. Assessment generation
+
+**Environment Variable**: `ANTHROPIC_API_KEY`
+
+API interactions are handled by `lib/skills_assessment/llm_client.rb`.
+
+## Dependencies
+
+- **thor** (1.3+): CLI framework for command structure
+- **dotenv** (3.1+): Environment variable management
+- **zeitwerk** (2.6+): Code auto-loading
+- **base64**: Standard library for encoding
+- **rubocop**: Code quality (development only)
+
+## Development
+
+### Code Structure
+
+The codebase uses Zeitwerk for automatic code loading, eliminating the need for manual `require` statements.
+
+### Adding a New Role
+
+1. Add role to `VALID_ROLES` in `constants.rb`
+2. Create ESCO skills CSV file in `lib/skills_assessment/ESCO/`
+3. Create assessment prompt in `lib/skills_assessment/prompts/`
+4. Add role configuration in `role_config.rb`
+5. Test with: `ruby cli.rb analyze <new-role> test_cv.pdf -o test.html`
+
+### Customizing Prompts
+
+Prompts are stored in `lib/skills_assessment/prompts/` as markdown files. Edit the prompt text directly to customize assessment behavior.
+
+Each prompt can use template variables:
+- `%{cv_text}`: CV content
+- `%{esco_skills}`: ESCO skills list
+
+## Error Handling
+
+The tool provides helpful error messages for:
+- Invalid role names
+- Missing CV files
+- Missing API key
+- JSON parsing errors
+- API communication failures
+
+Errors are color-coded in console output:
+- 🔴 Red: Critical errors requiring exit
+- 🟡 Yellow: Warnings or important notes
+- 🔵 Cyan: Information/processing status
+- 🟢 Green: Success
+
+## Troubleshooting
+
+### API Key Issues
 ```
-
-## 📈 Code Quality Metrics
-
-| Metric | Value |
-|--------|-------|
-| HtmlReportGenerator Reduction | 87.5% |
-| Average Method Length | 3-5 lines |
-| Average Class Size | 30-70 lines |
-| Cyclomatic Complexity | Low |
-| SOLID Compliance | ✅ 100% |
-
-## 🔄 Recent Refactoring
-
-### Phase 1: Foundation ✅
-- Error hierarchy
-- RoleConfig service
-- LLMResponseLogger
-
-### Phase 2: Design Patterns ✅
-- Presenter Pattern (5 classes)
-- HtmlReportGenerator refactor (87% reduction)
-- Role Identification feature
-
-### Phase 3: Planned
-- ResponseCleaner strategies (Strategy Pattern)
-- PromptLoader unification
-- ESCOSkillsLoader Query Object
-
-## 📚 Documentation
-
-- [Refactoring Summary](./REFACTORING_SUMMARY.md) - Complete refactoring overview
-- [Phase 2.2 Complete](./PHASE_2_2_COMPLETE.md) - HtmlReportGenerator refactoring
-- [Role Identification Feature](./ROLE_IDENTIFICATION_FEATURE.md) - Role identification details
-- [Refactoring Analysis](./REFACTORING_ANALYSIS.md) - Initial analysis document
-
-## 🐛 Error Handling
-
-The application includes comprehensive error handling:
-
-- **ResponseParseError** - JSON parsing failures
-- **ConfigError** - Configuration issues
-- **ValidationError** - Input validation
-- **FileError** - File operation failures
-- **LLMError** - API communication issues
-
-Errors include context and helpful messages for debugging.
-
-## 🚀 Future Enhancements
-
-- [ ] Batch CV analysis for multiple candidates
-- [ ] Analysis orchestrator for full two-stage workflow
-- [ ] Caching of role identification results
-- [ ] Machine learning model for role prediction
-- [ ] REST API endpoints
-- [ ] Database integration for report history
-- [ ] Comparison reports between roles
-
-## 📄 License
-
-[Your License Here]
-
-## 👥 Contributing
-
-[Contributing Guidelines]
-
-## 📧 Support
-
-For issues or questions, please [contact information]
-
----
-
-## Quick Start Example
-
-```bash
-# 1. Identify roles
-ruby cli.rb identify-roles my_cv.pdf -o roles.json
-
-# 2. View identified roles and choose one
-# Output shows: it-manager (95%), software-architect (92%), data-scientist (68%)
-
-# 3. Analyze for chosen role
-ruby cli.rb analyze it-manager my_cv.pdf -o report.html
-
-# 4. Open report in browser
-open report.html
+❌ Error: ANTHROPIC_API_KEY environment variable not set
 ```
+**Solution**: Add `ANTHROPIC_API_KEY=your-key` to `.env` file
 
-## 🎓 Learning Resources
+### Invalid Role
+```
+❌ Error: Invalid role 'invalid-role'
+```
+**Solution**: Use one of the valid roles: `data-scientist`, `it-manager`, `software-architect`
 
-This project demonstrates:
-- Clean Code principles
-- SOLID design patterns
-- Ruby best practices
-- Service-oriented architecture
-- Presenter Pattern implementation
-- Error handling strategies
-- CLI application development
-- Integration with external APIs
+### JSON Parsing Errors
+```
+❌ Error: Failed to parse LLM response as JSON
+```
+**Solution**: Enable logging with `-l` flag to inspect the raw LLM response
 
----
+### CV File Not Found
+```
+❌ Error: CV file 'path/to/file.pdf' not found
+```
+**Solution**: Verify the file path is correct and the file exists
 
-**Last Updated**: October 24, 2025
-**Project Status**: Active Development
-**Current Phase**: Phase 2 - Design Pattern Implementation
+## Performance Considerations
+
+- **CV Processing**: Typically 10-30 seconds depending on CV length
+- **Role Identification**: Typically 15-45 seconds
+- **Concurrent Requests**: The tool processes one CV at a time
+
+## License
+
+[Add license information here if applicable]
+
+## Support
+
+For issues, questions, or contributions, please contact the project maintainers.
+
+## Changelog
+
+### Version 1.0.0 (2025-10-24)
+- Initial release
+- Support for 3 roles: Data Scientist, IT Manager, Software Architect
+- HTML and JSON report generation
+- Role identification from CV
+- ESCO skills taxonomy integration
+- LLM response logging
