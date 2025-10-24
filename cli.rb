@@ -19,10 +19,9 @@ class SkillsAssessmentCLI < Thor
 
   def analyze(role, cv_file)
     # Validate role
-    valid_roles = %w[data-scientist it-manager software-architect]
-    unless valid_roles.include?(role)
+    unless SkillsAssessment::RoleConfig.valid?(role)
       say "❌ Error: Invalid role '#{role}'", :red
-      say "Valid roles: #{valid_roles.join(', ')}", :yellow
+      say "Valid roles: #{SkillsAssessment::RoleConfig.valid_roles.join(', ')}", :yellow
       exit 1
     end
 
@@ -45,7 +44,7 @@ class SkillsAssessmentCLI < Thor
     end
 
     # Get configuration
-    config = get_role_config(role)
+    config = SkillsAssessment::RoleConfig.for(role)
 
     # Determine output path
     output_path = determine_output_path(options[:output], role, cv_file)
@@ -89,27 +88,6 @@ class SkillsAssessmentCLI < Thor
   end
 
   private
-
-  def get_role_config(role)
-    configs = {
-      'data-scientist' => {
-        prompt_key: 'data_scientist_skills',
-        max_tokens: 3000,
-        title: 'DATA SCIENTIST SKILLS ASSESSMENT'
-      },
-      'it-manager' => {
-        prompt_key: 'it_manager_skills',
-        max_tokens: 4000,
-        title: 'IT MANAGER SKILLS ASSESSMENT'
-      },
-      'software-architect' => {
-        prompt_key: 'software_architect_skills',
-        max_tokens: 4000,
-        title: 'SOFTWARE ARCHITECT SKILLS ASSESSMENT'
-      }
-    }
-    configs[role]
-  end
 
   def determine_output_path(output_option, role, cv_file)
     return nil unless output_option
